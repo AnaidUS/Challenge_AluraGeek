@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+/*Primero Mobil*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+/*Header*/
+.main-header {
+    padding: 0 20px;
+    margin: 20px 0;
+}
+.main-header__title{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #454546;
+}
+.main-header__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-solid{
+    font-size: 1em;
+    border: 1px solid black;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+    border-radius: 10px;
+}
+.main-header__btn{
+    display: block;
+    padding: 10px 30px;
+    color: #454546;
+    border: 1px solid #454546;
+    text-decoration: none;
+}
+.main-header__input{
+    display: block;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/*Main*/
+.main{
+    padding: 20px 10px;
+}
+button{
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #e4812f 0%, #f86227 100% );
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+button:hover {
+box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+transform: translateY(-0.1em);
+}
+button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+}
+
+/*Galería*/
+.container{
+    padding: 10px;
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.product{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.product:before{
+    content: "Nuevo";
+    background: #ff4e00;
+    padding: 10px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: rotate(-90deg);
+    color: aliceblue;
+}
+.product__img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.product__title{
+    text-align: center;
+}
+.product__price{
+    color: #ff4e00;
+    font-weight: bold;
+}
+.product__icon{
+    display: block;
+    margin-top: 10px;
+}
+.product:hover .product__icon {
+    color: #ff4e00;
+}
+.fa-solid{
+    border: none;
+}
+
+/*Footer*/
+.main-footer{
+    background: #151515;
+    color: white;
+    padding: 30px 20px;
+}
+.footer__title{
+    border-bottom: 1px solid #555555;
+    padding-bottom: 20px;
+}
+.footer__txt{
+    color: #706f6f;
+}
+.footer__link{
+    color: #555555;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+.footer__input{
+    background: #15151515;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid #555555;
+}
+.copy{
+    color: #555555;
+    border-top: 1px solid #555555;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*Formulario*/
+.form {
+    width: 250px;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 10%;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: rgba(245, 245, 245, 0.034);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+    transition: .2s linear;
+}
+.form button {
+    align-self: flex-end;
+}
+.form:hover {
+    transform: scale(1.1);
+}
+.label {
+    font-size: 14px;
+    margin-bottom: -10.6px;
+}
+.input {
+    height: 25px;
+    width: 100%;
+    border: 0.5px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .2s linear;
+    position: relative;
+}
+.textarea{
+    height: 100px;
+}
+.input:focus {
+    outline: none;
+    background-color: rgba(173, 173, 173, 0.233);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.137);
+}
+button {
+    border: none;
+    padding: 4px 10px;
+    border-radius: 5px;
+    transition: .2s linear;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.74);
+    box-shadow: 2px 2px 10px rgba(124, 124, 124, 0.192);
+}
+
+/*Responsive tablet*/
+@media screen and (min-width:768px){
+    .main-header__title{
+        font-size: 5em;
+        color: #454546;
+    }
+    .main-header__title{
+        width: 500px
+    }
+    .fa-solid{
+        font-size: 2em;
+    }
+    .main-header__input{
+        width: 85%;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 30px;
+    }
+    .galeria-title__container{
+        font-size: 50px;
+    }
+    button{
+        padding: 1em 3em;
+        height: 3em;
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+    .product__img{
+        height: 200px !important;
+    }
+    .form {
+        width: 500px !important;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15% !important;
+    }
+
+}
+
+/*Responsive Desktop*/
+@media screen and (min-width:1024px){
+    .main-header__title{
+        font-size: 5em;
+        color: #454546;
+    }
+    .main-header__title{
+        width: 700px
+    }
+    .fa-solid{
+        font-size: 2em;
+    }
+    .main-header__input{
+        width: 85%;
+        max-width: 900px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (min-width:1240px){
+    .main-header .container--flex{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main-header__input{
+        width: 85%;
+        max-width: 900px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 30px;
+        margin: 80px 0;
+    }
+    .container-products{
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 15px;
+    }
+    .product__img{
+        height: 300px !important;
+    }
+    .footer__section{
+        margin: 50px 0;
+    }
+    .form {
+        width: 500px !important;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35% !important;
+    }
+}

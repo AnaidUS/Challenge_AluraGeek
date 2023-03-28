@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+/*Primero Mobil*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+/*Header*/
+.main-header {
+    padding: 0 20px;
+}
+.main-header__title{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #454546;
+}
+/*Menú*/
+.main-nav{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 999999;
+}
+.menu{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    background: #212121;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu__item{
+    text-align: center;
+    margin: auto;
+}
+.menu__link{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+.menu__link:hover{
+    background: white;
+    color:black
+}
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Resto header*/
+.main-header__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-header__link{
+    color: #494646;
+}
+.main-header__link:hover:before{
+    color: #494646;
+    content: "LOGIN ";
+}
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid black;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.main-header__btn{
+    display: block;
+    padding: 10px 30px;
+    color: #454546;
+    border: 1px solid #454546;
+    text-decoration: none;
+}
+.main-header__input{
+    display: block;
+    padding: 10px;
+    width: 50%;
+}
+
+/*Responsive tablet*/
+@media screen and (min-width:768px){
+    .slider{
+        height: 500px !important;
+        object-fit: cover;
+    }
+    .editor__item{
+        height: 400px !important;
+        object-fit: cover;
+    }
+    .product__img{
+        height: 200px !important;
+    }
+    .form {
+        width: 500px !important;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15% !important;
+    }
+}
+
+/*Responsive Desktop*/
+@media screen and (min-width:1024px){
+    .container{
+        margin: auto;
+    }
+    .slider{
+        height: 600px !important;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .main-header .container--flex{
+        display: flex;
+        align-items: center;
+    }
+    .main-header__container{
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .main-header__txt{
+        width: 100%;
+    }
+    .main-header__container:nth-child(2){
+        order: -1;
+        width: 20%;
+    }
+    .main-header__container:nth-child(3){
+        width: 20%;
+        padding: 0 20px;
+        padding-left: 50px;
+    }
+    .main-header__title{
+        width: 100%;
+        font-size: 4em;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    } 
+    .main-header__link{
+        margin-bottom: 20px;
+    }
+    .main-header__btn{
+        width: 130px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .main-header__input{
+        width: 85%;
+    }
+    .main-nav{
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .menu{
+        position: static;
+        width: 100%;
+        display: flex;
+        background: none;
+    }
+    .menu__link{
+        color: #333333;
+    }
+    .menu__link:hover{
+        background: #333333;
+        color: aliceblue;
+    }
+    .container-products{
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 15px;
+    }
+    .product__img{
+        height: 300px !important;
+    }
+    .footer__section{
+        margin: 50px 0;
+    }
+    .form {
+        width: 500px !important;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35% !important;
+    }
+}

@@ -1,0 +1,67 @@
+{
+"producto": [
+        {
+            "url": "../img/productos__galeria/cascoBlanco.jpg",
+            "name": "Taza casco Storm-Trooper",
+            "price": "60.00",
+            "id": 1,
+            "alt": "Product",
+            "section": "Star Wars",
+            "description": "Taza casco Storm-Trooper, Star Wars, tamaño 10cm"
+        },
+        {
+            "url": "../img/productos__galeria/bebeYoda.jpg",
+            "name": "Figura bebé Yoda 10cm",
+            "price": "120.00",
+            "id": 2,
+            "alt": "Product",
+            "section": "Star Wars",
+            "description": "Taza casco Storm-Trooper, Star Wars, tamaño 10cm"
+        },
+        {
+            "url": "../img/productos__galeria/cascos.jpg",
+            "name": "Figura casco de colección varios",
+            "price": "166.00",
+            "id": 3,
+            "alt": "Product",
+            "section": "Star Wars",
+            "description": "Taza casco Storm-Trooper, Star Wars, tamaño 10cm"
+        },
+        {
+            "url": "../img/productos__galeria/papatin.jpg",
+            "name": "Figura Darth Maul 15cm",
+            "price": "185.00",
+            "id": 4,
+            "alt": "Product",
+            "section": "Star Wars",
+            "description": "Taza casco Storm-Trooper, Star Wars, tamaño 10cm"
+        },
+        {
+            "url": "../img/productos__galeria/consolaX.jpg",
+            "name": "Consola X-Box",
+            "price": "2,600.00",
+            "id": 5,
+            "alt": "Product",
+            "section": "varios",
+            "description": "Taza casco Storm-Trooper, Star Wars, tamaño 10cm"
+        },
+        {
+            "url": "../img/productos__galeria/mario.jpg",
+            "name": "Figura Yoshi 10cm",
+            "price": "150.00",
+            "id": 6,
+            "alt": "Product",
+            "section": "varios",
+            "description": "Taza casco Storm-Trooper, Star Wars, tamaño 10cm"
+        },
+        {
+            "url": "../img/productos__galeria/sonic_azul.jpg",
+            "name": "Figura colección Sonic 10cm",
+            "price": "160.00",
+            "id": 7,
+            "alt": "Product",
+            "section": "varios",
+            "description": "Taza casco Storm-Trooper, Star Wars, tamaño 10cm"
+        }
+    ]
+}
